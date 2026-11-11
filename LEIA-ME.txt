@@ -1,0 +1,35 @@
+BOTWISE — VERSÃO CORRIGIDA PARA GITHUB PAGES
+
+ESTRUTURA
+- index.html
+- css/styles.css
+- assets/ (logos e ícones)
+
+COMO PUBLICAR
+1. Extraia este ZIP.
+2. Envie index.html, a pasta css e a pasta assets para a raiz do repositório GitHub (não envie apenas o index.html).
+3. No GitHub, abra Settings > Pages.
+4. Em Build and deployment, selecione Deploy from a branch, branch main e pasta /(root), se essa for a branch que contém os arquivos.
+5. Aguarde a publicação e atualize o site com Ctrl+F5.
+
+O caminho no HTML já está relativo e corrigido para a estrutura:
+<link rel="stylesheet" href="css/styles.css">
+
+IMPORTANTE
+- Não renomeie a pasta css nem o arquivo styles.css sem atualizar o caminho no HTML.
+- O GitHub diferencia letras maiúsculas de minúsculas.
+- Se publicar dentro de uma subpasta do repositório, mantenha juntos index.html, css/ e assets/.
+- A conversa exibida na demonstração é ilustrativa; não é um chatbot conectado ao WhatsApp.
+
+<!---USADO PARA COMENTARIO--!>
+
+TELA DE ABERTURA (ANIMAÇÃO DA LOGO)
+- Ao abrir o site, a logo é desenhada, o nome "botwise." aparece com a legenda e, em seguida, a tela sobe sozinha e revela o site.
+- Clique, toque ou Enter/Esc pulam a animação.
+- O código está no começo do <body> do index.html (bloco class="splash") e no final do css/styles.css (seção "Tela de abertura").
+- Para mudar a legenda, edite o texto dentro de <p class="splash-tag"> no index.html.
+- Para mudar o tempo antes de a tela subir, edite o número em setTimeout(enter, ... *1000) no script do final do index.html.
+- Links diretos com #, como seusite.com/#contato, pulam a abertura.
+
+ÍCONE DA ABA (FAVICON)
+- Os ícones em assets/ agora são verdes. Se o navegador ainda mostrar o ícone antigo, use Ctrl+F5 ou abra em uma aba anônima (o navegador guarda o favicon em cache).
